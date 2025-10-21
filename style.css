@@ -586,6 +586,7 @@ header .container {
     justify-content: center;
     margin-bottom: 30px;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .tab-btn {
@@ -804,64 +805,6 @@ header .container {
     padding: 4px 8px;
     border-radius: 4px;
     font-size: 0.8rem;
-}
-
-/* ===== TESTIMONIALS ===== */
-.testimonials-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.testimonial-card {
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 15px;
-    padding: 30px;
-    transition: var(--transition);
-}
-
-.testimonial-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px var(--shadow-hover);
-}
-
-.testimonial-content {
-    margin-bottom: 20px;
-    font-style: italic;
-    position: relative;
-}
-
-.testimonial-content::before {
-    content: '"';
-    font-size: 3rem;
-    color: var(--primary-color);
-    position: absolute;
-    top: -15px;
-    left: -10px;
-    opacity: 0.3;
-}
-
-.testimonial-author {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.testimonial-author img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.author-info h4 {
-    margin-bottom: 5px;
-}
-
-.author-info p {
-    color: var(--text-secondary);
-    font-size: 0.9rem;
 }
 
 /* ===== CONTACT ===== */
@@ -1127,5 +1070,9 @@ footer {
     
     .contact-container {
         grid-template-columns: 1fr;
+    }
+    
+    .resume-tabs {
+        flex-wrap: wrap;
     }
 }
